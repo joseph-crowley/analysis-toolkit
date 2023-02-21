@@ -1,8 +1,6 @@
 /**
  * @file loopers.cpp
- * @brief Implements a fast and optimized data analysis loop for the CMS Compact Muon Solenoid experiment.
- *
- * This file contains the implementation of a C++ data analysis loop for the CMS experiment. The loop uses advanced techniques for performance optimization, such as vectorization and multithreading, to quickly process large amounts of data and produce histograms for further analysis.
+ * @brief Implements data analysis looper for the CMS Compact Muon Solenoid experiment.
  *
  * @author Joe Crowley
  * @date February 20, 2023 
@@ -20,6 +18,7 @@
 #include <unordered_map>
 
 #include "TFile.h"
+#include "TChain.h"
 #include "TH1D.h"
 #include "TTree.h"
 
@@ -161,12 +160,11 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             Ht += pt;
             
             // Fill histograms for the jet and b-jet kinematics
-            if (is_btagged > 0 && passMETCut) hists["h_bjetpt"].at(is_btagged - 1)->Fill(pt, event_total_wgt);
 
             // count the number of jets and b-jets
             if (is_btagged == 0) {
                 njet_ct++;
-                if (passMETCut) hists["h_jetpt"]->Fill(pt, event_total_wgt);
+                if (passMETCut) hists["jetpt"]->Fill(pt, event_total_wgt);
                 continue; // skip the rest of the loop if the jet is not b-tagged
             }
 
@@ -179,7 +177,7 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             // fill the bjet pt for all btag categories less than or equal to is_btagged
             if !(passMETCut) continue;
             for (unsigned int is_btagged_category = 0; is_btagged_category < is_btagged; is_btagged_category++) {
-                hists["h_bjetpt_" + btag_categories.at(is_btagged_category)]->Fill(pt, event_total_wgt);
+                hists["bjetpt_" + btag_categories.at(is_btagged_category)]->Fill(pt, event_total_wgt);
             }
         }
     }
@@ -226,8 +224,8 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             // dilepton hists
             hists["m_ll_" + category]->Fill(dilep.M(), event_total_wgt);
             hists["pt_ll_" + category]->Fill(dilep.Pt(), event_total_wgt);
-            //h_m_lb.at(i_nb_category)->Fill(min_mlb, event_total_wgt);
-            //h_m_bb.at(i_nb_category)->Fill(min_mbb, event_total_wgt);
+            //hists["m_lb_" + category]->Fill(min_mlb, event_total_wgt);
+            //hists["m_bb_" + category]->Fill(min_mbb, event_total_wgt);
         }
         hists["PFMET_pt_final_" + category]->Fill(data.PFMET_pt_final, event_total_wgt);
         hists["Ht_" + category]->Fill(Ht, event_total_wgt);
@@ -283,7 +281,8 @@ void process_chain(TChain *chain, std::string sample_str) {
     }
 
     // Rebin and write histograms to file 
-    TFile *f = new TFile("hists_"+ sample_str + ".root", "RECREATE");
+    std::string outfile_name = "hists_"+ sample_str + "_" + btag_categories.at(btag_WP) + "bpt" + pt_threshold_btagged + "_jpt" + pt_threshold_unbtagged + ".root";
+    TFile *f = new TFile(outfile_name.c_str(), "RECREATE");
     TH1D *hist;
     int nbin;
     for (auto &pair : hists) {
