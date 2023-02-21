@@ -159,12 +159,14 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             Ht += pt;
             
             // Fill histograms for the jet and b-jet kinematics
+            if !(passMETCut) continue;
 
             // count the number of jets and b-jets
             if (is_btagged == 0) {
                 njet_ct++;
-                if (passMETCut) hists["jetpt"]->Fill(pt, event_total_wgt);
-                continue; // skip the rest of the loop if the jet is not b-tagged
+                hists["jetpt"]->Fill(pt, event_total_wgt);
+                // skip the rest of the loop if the jet is not b-tagged
+                continue; 
             }
 
             // at this point, the jet is b-tagged
@@ -174,7 +176,6 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             if (is_btagged >= 3) nbjet_ct.at(2)++;
 
             // fill the bjet pt for all btag categories less than or equal to is_btagged
-            if !(passMETCut) continue;
             for (unsigned int is_btagged_category = 0; is_btagged_category < is_btagged; is_btagged_category++) {
                 hists["bjetpt_" + btag_categories.at(is_btagged_category)]->Fill(pt, event_total_wgt);
             }
