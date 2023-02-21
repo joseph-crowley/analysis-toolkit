@@ -83,9 +83,12 @@ struct EventData {
 std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> btag_categories, std::vector<std::string> nb_categories) {
     std::unordered_map<std::string, TH1D *> hists;
 
-    // Initialize histograms for the number of jets and b-jets
+
+    // Initialize histograms for the jets and b-jets multiplicity and kinematics
+    hists["jetpt"] = new TH1D("jetpt", "p_{T} of all non-btagged Jets", 20, 0, 20);
     for (const auto& category : btag_categories) {
-        hists["nbjet_" + category] = new TH1D(("nbjet_" + category).c_str(), "Number of b-Jets", 20, 0, 20);
+        hists["bjetpt_" + category] = new TH1D(("bjetpt_" + category).c_str(), ("p_{T} of all " + category + " b-Jets").c_str(), 20, 0, 20);
+        hists["nbjet_" + category] = new TH1D(("nbjet_" + category).c_str(), ("Number of " + category + " b-Jets").c_str(), 20, 0, 20);
         hists["njet_" + category] = new TH1D(("njet_" + category).c_str(), "Number of Jets", 20, 0, 20);
     }
 
@@ -157,14 +160,26 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             Ht += pt;
             
             // Fill histograms for the jet and b-jet kinematics
-            if (is_btagged == 0 && passMETCut) hists["h_jetpt"].front()->Fill(pt, event_total_wgt);
             if (is_btagged > 0 && passMETCut) hists["h_bjetpt"].at(is_btagged - 1)->Fill(pt, event_total_wgt);
 
             // count the number of jets and b-jets
-            if (is_btagged == 0) njet_ct++;
+            if (is_btagged == 0) {
+                njet_ct++;
+                if (passMETCut) hists["h_jetpt"]->Fill(pt, event_total_wgt);
+                continue; // skip the rest of the loop if the jet is not b-tagged
+            }
+
+            // at this point, the jet is b-tagged
+            // count the number of b-jets
             if (is_btagged >= 1) nbjet_ct.at(0)++;
             if (is_btagged >= 2) nbjet_ct.at(1)++;
             if (is_btagged >= 3) nbjet_ct.at(2)++;
+
+            // fill the bjet pt for all btag categories less than or equal to is_btagged
+            if !(passMETCut) continue;
+            for (unsigned int is_btagged_category = 0; is_btagged_category < is_btagged; is_btagged_category++) {
+                hists["h_bjetpt_" + btag_categories.at(is_btagged_category)]->Fill(pt, event_total_wgt);
+            }
         }
     }
 
