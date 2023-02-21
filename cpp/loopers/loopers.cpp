@@ -117,8 +117,8 @@ std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> 
 /**
  * @brief A function to process a single event.
  *
- * This function takes a single event and processes it, producing histograms.
- * The histograms are filled with the weights calculated from the event weight, the trigger weight, and the b-tagging scale factor. 
+ * This function takes a single event and processes it, filling histograms.
+ * The histograms are filled calculated from the event weight, the trigger weight, and the b-tagging scale factor. 
  * The raw event weight is the product of the luminosity, the cross section, and the number of events.
  *     - trigger weight is the product of the single lepton trigger efficiency and the dilepton trigger efficiency.
  *     - b-tagging scale factor is the product of the b-tagging scale factor for each b-tagged jet.
@@ -151,7 +151,8 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
         unsigned char is_btagged = data.jet_is_btagged->at(i);
         float const& pt = data.jet_pt->at(i);
 
-        // TODO: add thresholds and WPs as arguments instead
+        // check if the jet passes the pt threshold
+        // note: pt_threshold has to be redefined after the b-tagging check since btagged jets require a different pt threshold
         float pt_threshold = (is_btagged ? pt_threshold_btagged : pt_threshold_unbtagged);
         if (is_btagged && pt < pt_threshold) is_btagged = 0;
         pt_threshold = (is_btagged ? pt_threshold_btagged : pt_threshold_unbtagged);
@@ -283,14 +284,15 @@ void process_chain(TChain *chain, std::string sample_str) {
 
     // Rebin and write histograms to file 
     TFile *f = new TFile("hists_"+ sample_str + ".root", "RECREATE");
-    // hists is an unordered map, so take the second element of the pairs, which is the vector hists for each category
+    TH1D *hist;
+    int nbin;
     for (auto &pair : hists) {
-        for (auto &hist : pair.second) {
-            int nbin = hist->GetNbinsX();
-            hist->SetBinContent(nbin, hist->GetBinContent(nbin + 1) + hist->GetBinContent(nbin));
-            hist->SetBinError(nbin, std::sqrt(std::pow(hist->GetBinError(nbin + 1), 2) + std::pow(hist->GetBinError(nbin), 2)));
-            hist->Write();
-        }
+        // hists is an unordered map, so take the second element of the pairs, which is the hist for the category
+        hist = pair.second;
+        nbin = hist->GetNbinsX();
+        hist->SetBinContent(nbin, hist->GetBinContent(nbin + 1) + hist->GetBinContent(nbin));
+        hist->SetBinError(nbin, std::sqrt(std::pow(hist->GetBinError(nbin + 1), 2) + std::pow(hist->GetBinError(nbin), 2)));
+        hist->Write();
     }
     f->Close();
 }
