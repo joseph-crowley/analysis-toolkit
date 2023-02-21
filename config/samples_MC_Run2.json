@@ -1,0 +1,2376 @@
+{
+    "DY_2l_M_10to50": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/DY_2l_M_10to50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 15800.0
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/DY_2l_M_10to50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 15800.0
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/DY_2l_M_10to50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 15800.0
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/DY_2l_M_10to50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 15800.0
+            }
+        }
+    },
+    "DY_2l_M_50": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/DY_2l_M_50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 6225.4
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/DY_2l_M_50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 6225.4
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/DY_2l_M_50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 6225.4
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/DY_2l_M_50_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 6225.4
+            }
+        }
+    },
+    "TT_2l2nu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TT_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TT_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TT_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TT_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        }
+    },
+    "TT_lnu_nlo": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TT_lnu_nlo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TT_lnu_nlo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TT_lnu_nlo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TT_lnu_nlo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        }
+    },
+    "TTJets": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 831.76
+            }
+        }
+    },
+    "TT_lnu_top_lo": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TT_lnu_top_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TT_lnu_top_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TT_lnu_top_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TT_lnu_top_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        }
+    },
+    "TT_lnu_antitop_lo": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TT_lnu_antitop_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TT_lnu_antitop_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TT_lnu_antitop_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 182.96
+            }
+        }
+    },
+    "TTZ_2l_M_1to10": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZ_2l_M_1to10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0493
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZ_2l_M_1to10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0493
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZ_2l_M_1to10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0493
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZ_2l_M_1to10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0493
+            }
+        }
+    },
+    "TTZ_2l2nu_M_10": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZ_2l2nu_M_10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2432
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZ_2l2nu_M_10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2432
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZ_2l2nu_M_10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2432
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZ_2l2nu_M_10_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2432
+            }
+        }
+    },
+    "TTZ_nunu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZ_nunu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.1476
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZ_nunu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.1476
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZ_nunu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.1476
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZ_nunu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.1476
+            }
+        }
+    },
+    "TTZ_qq": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZ_qq_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.5113
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZ_qq_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.5113
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZ_qq_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.5113
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZ_qq_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.5113
+            }
+        }
+    },
+    "TTW_lnu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTW_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2181
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTW_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2181
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTW_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2181
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTW_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2181
+            }
+        }
+    },
+    "TTG_lnu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTG_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.538
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTG_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.538
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTG_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.538
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTG_lnu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.538
+            }
+        }
+    },
+    "TTG_2l2nu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTG_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.632
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTG_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.632
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTG_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.632
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTG_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.632
+            }
+        }
+    },
+    "TTGJets": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTGJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3.7460000000000004
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTGJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3.7460000000000004
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTGJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3.7460000000000004
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTGJets_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3.7460000000000004
+            }
+        }
+    },
+    "TTGJets_ext": {
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTGJets_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3.7460000000000004
+            }
+        }
+    },
+    "TTH_HToNonBB": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTH_HToNonBB_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.215
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTH_HToNonBB_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.215
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTH_HToNonBB_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.215
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTH_HToNonBB_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.215
+            }
+        }
+    },
+    "TTTJ": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTTJ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.00047400000000000003
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTTJ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.00047400000000000003
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTTJ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.00047400000000000003
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTTJ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.00047400000000000003
+            }
+        }
+    },
+    "TTHH": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTHH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0007570000000000001
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTHH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0007570000000000001
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTHH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0007570000000000001
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTHH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0007570000000000001
+            }
+        }
+    },
+    "TTWZ": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTWZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0038840000000000003
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTWZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0038840000000000003
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTWZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0038840000000000003
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTWZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0038840000000000003
+            }
+        }
+    },
+    "TTZZ": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001982
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001982
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001982
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001982
+            }
+        }
+    },
+    "TTTW": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTTW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.000788
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTTW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.000788
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTTW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.000788
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTTW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.000788
+            }
+        }
+    },
+    "TTWH": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTWH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001582
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTWH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001582
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTWH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001582
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTWH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001582
+            }
+        }
+    },
+    "TTZH": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTZH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001535
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTZH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001535
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTZH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001535
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTZH_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.001535
+            }
+        }
+    },
+    "TTWW": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTWW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0115
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTWW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0115
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTWW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0115
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTWW_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0115
+            }
+        }
+    },
+    "ST_tW_top_5f_NoFullyHadronicDecays": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/ST_tW_top_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/ST_tW_top_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/ST_tW_top_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/ST_tW_top_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        }
+    },
+    "ST_tW_antitop_5f_NoFullyHadronicDecays": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/ST_tW_antitop_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/ST_tW_antitop_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/ST_tW_antitop_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/ST_tW_antitop_5f_NoFullyHadronicDecays_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 34.9
+            }
+        }
+    },
+    "WJets_lnu_lo": {
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 61335.0
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 61335.0
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 61335.0
+            }
+        }
+    },
+    "WJets_lnu_0j": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_0j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 49141.0
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_0j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 49141.0
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_0j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 49141.0
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_0j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 49141.0
+            }
+        }
+    },
+    "WJets_lnu_1j": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_1j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 8045.1
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_1j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 8045.1
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_1j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 8045.1
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_1j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 8045.1
+            }
+        }
+    },
+    "WJets_lnu_2j": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_2j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3159.9
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_2j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3159.9
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_2j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3159.9
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_2j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 3159.9
+            }
+        }
+    },
+    "WJets_lnu_HT_70-100": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_70-100_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1304.0
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_70-100_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1304.0
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_70-100_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1304.0
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_70-100_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1304.0
+            }
+        }
+    },
+    "WJets_lnu_HT_100-200": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_100-200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1677.06
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_100-200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1677.06
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_100-200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1677.06
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_100-200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1677.06
+            }
+        }
+    },
+    "WJets_lnu_HT_200-400": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_200-400_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 494.406
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_200-400_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 494.406
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_200-400_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 494.406
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_200-400_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 494.406
+            }
+        }
+    },
+    "WJets_lnu_HT_400-600": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_400-600_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 70.1921
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_400-600_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 70.1921
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_400-600_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 70.1921
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_400-600_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 70.1921
+            }
+        }
+    },
+    "WJets_lnu_HT_400-600_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_400-600_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 70.1921
+            }
+        }
+    },
+    "WJets_lnu_HT_600-800": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_600-800_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 17.4361
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_600-800_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 17.4361
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_600-800_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 17.4361
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_600-800_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 17.4361
+            }
+        }
+    },
+    "WJets_lnu_HT_600-800_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_600-800_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 17.4361
+            }
+        }
+    },
+    "WJets_lnu_HT_800-1200": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_800-1200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 7.80813
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_800-1200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 7.80813
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_800-1200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 7.80813
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_800-1200_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 7.80813
+            }
+        }
+    },
+    "WJets_lnu_HT_800-1200_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_800-1200_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 7.80813
+            }
+        }
+    },
+    "WJets_lnu_HT_1200-2500": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_1200-2500_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.7315099999999999
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_1200-2500_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.7315099999999999
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_1200-2500_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.7315099999999999
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_1200-2500_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.7315099999999999
+            }
+        }
+    },
+    "WJets_lnu_HT_1200-2500_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_1200-2500_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.7315099999999999
+            }
+        }
+    },
+    "WJets_lnu_HT_2500-inf": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_2500-inf_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04063
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WJets_lnu_HT_2500-inf_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04063
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WJets_lnu_HT_2500-inf_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04063
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WJets_lnu_HT_2500-inf_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04063
+            }
+        }
+    },
+    "WJets_lnu_HT_2500-inf_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WJets_lnu_HT_2500-inf_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04063
+            }
+        }
+    },
+    "qqWW_2l2nu": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqWW_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 11.08
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqWW_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 11.08
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqWW_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 11.08
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWW_2l2nu_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 11.08
+            }
+        }
+    },
+    "qqWZ_3lnu_POWHEG": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqWZ_3lnu_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 4.658
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqWZ_3lnu_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 4.658
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqWZ_3lnu_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 4.658
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWZ_3lnu_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 4.658
+            }
+        }
+    },
+    "qqWZ_3lnu_POWHEG_mll_0p1-inf": {
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWZ_3lnu_POWHEG_mll_0p1-inf_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 37.3008
+            }
+        }
+    },
+    "qqWZ_3lnu_MG": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqWZ_3lnu_MG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 5.087
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqWZ_3lnu_MG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 5.087
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqWZ_3lnu_MG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 5.087
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWZ_3lnu_MG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 5.087
+            }
+        }
+    },
+    "qqZZ_4l": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqZZ_4l_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.325
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqZZ_4l_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.325
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqZZ_4l_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.325
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqZZ_4l_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 1.325
+            }
+        }
+    },
+    "qqZG_ll_01j": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqZG_ll_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 117.86
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqZG_ll_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 117.86
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqZG_ll_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 117.86
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqZG_ll_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 117.86
+            }
+        }
+    },
+    "qqWG_lnu_nlo_01j": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqWG_lnu_nlo_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 191.4
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqWG_lnu_nlo_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 191.4
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqWG_lnu_nlo_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 191.4
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWG_lnu_nlo_01j_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 191.4
+            }
+        }
+    },
+    "qqWG_lnu_lo": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/qqWG_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 444.6
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/qqWG_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 444.6
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/qqWG_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 444.6
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/qqWG_lnu_lo_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 444.6
+            }
+        }
+    },
+    "WWW_4f": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WWW_4f_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WWW_4f_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WWW_4f_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WWW_4f_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        }
+    },
+    "WWW_4f_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WWW_4f_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WWW_4f_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WWW_4f_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WWW_4f_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2154
+            }
+        }
+    },
+    "WWG": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WWG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2147
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WWG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2147
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WWG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2147
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WWG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.2147
+            }
+        }
+    },
+    "WZG": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WZG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04123
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WZG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04123
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WZG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04123
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WZG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.04123
+            }
+        }
+    },
+    "WZZ": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        }
+    },
+    "WZZ_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/WZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/WZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/WZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/WZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.0571
+            }
+        }
+    },
+    "ZZZ": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/ZZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/ZZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/ZZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/ZZZ_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        }
+    },
+    "ZZZ_ext": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/ZZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/ZZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/ZZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/ZZZ_ext_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.014730000000000002
+            }
+        }
+    },
+    "GGH_ZZTo4L_POWHEG": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/GGH_ZZTo4L_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 28.87
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/GGH_ZZTo4L_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 28.87
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/GGH_ZZTo4L_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 28.87
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/GGH_ZZTo4L_POWHEG_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 28.87
+            }
+        }
+    },
+    "TTTT": {
+        "2016_APV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_APV/TTTT_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.009103
+            }
+        },
+        "2016_NonAPV": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2016_NonAPV/TTTT_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.009103
+            }
+        },
+        "2017": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2017/TTTT_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.009103
+            }
+        },
+        "2018": {
+            "paths": [
+                [
+                    "/ceph/cms/store/group/tttt/Worker/crowley/output/Analysis_TTJetRadiation/230214_tt_bkg_Cutbased/2018/TTTT_*_of_*.root"
+                ]
+            ],
+            "metadata": {
+                "xs": 0.009103
+            }
+        }
+    }
+}

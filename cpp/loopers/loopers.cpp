@@ -8,7 +8,6 @@
  * @see analysis.py
  * @see plotting.py
  *
- * @copyright Copyright (c) University of California, Santa Barbara, 2023
  */
 
 #include <vector>
