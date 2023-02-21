@@ -20,30 +20,40 @@ import helpers as hf
 def main():
     # Load the C++ code that will be used to process the events
     root.gSystem.Load('../cpp/loopers/analyze_bjets.so')
-    
+
     # Load the samples
     samples_json = '../config/samples_MC_Run2.json'
     with open(samples_json,'r') as f:
         samples = json.load(f)
-    
+
     # Create a dictionary of TChains for each sample
     map_sample_to_category = hf.map_sample_to_category
+    categories = list(set(map_sample_to_category.values()))
     ch = {}
 
     # Loop over the samples and add the files to the TChains
     for name,sample in samples:
-        for period in sample: 
+
+        # technical detail: sometimes "_ext" samples have more data
+        # remove ext and treat it like normal.
+        # TODO: treat "_ext" samples appropriately by taking the larger collection
+        name_noext = name.replace('_ext')
+        category = map_sample_to_category[name_noext]
+
+        for period in sample:
             # Create a string that will be used to identify the sample
-            sample_str = period + "_" + map_sample_to_category[name]
+            sample_str = period + "_" + category
 
             # Create a TChain for the sample if it doesn't already exist
             if sample_str not in ch:
                 ch[sample_str] = root.TChain("Events")
 
             # Add the files to the TChain
-            for file_ in hf.get_files(sample[period]['paths']): 
+            files_by_sample = hf.get_files(sample[period]['paths'])
+            files_by_category = hf.get_samples_by_category(categories, files_by_sample)
+            for file_ in files_by_category[category]:
                 ch[sample_str].Add(file_)
-    
+
     # Process the TChains
     for sample_str in ch:
         root.process_chain(ch[sample_str], sample_str)
