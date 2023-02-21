@@ -62,7 +62,7 @@ struct EventData {
 /**
  * @brief Get the histograms used in the analysis.
  *
- *  The histograms are stored in a map of vectors, where the key is the histogram name and the vector contains the histograms for each b-tagging working point.
+ *  Histograms are stored in a map, where the key is the name and the value is the histogram.
  *  - nbjet is the number of b-jets.
  *  - njet is the number of non-btagged jets.
  *  - lep1_pt is the transverse momentum of the leading lepton.
@@ -71,41 +71,41 @@ struct EventData {
  *  - lep2_pt is the transverse momentum of the sub-leading lepton.
  *  - lep2_eta is the pseudorapidity of the sub-leading lepton.
  *  - lep2_phi is the azimuthal angle of the sub-leading lepton.
+ *  
+ *  Histograms are categorized by the number of b-jets and the b-tagging working point.
  * 
- * @return A map of vectors containing the histograms used in the analysis.
+ *  @param btag_categories A vector of strings containing the b-tagging working points.
+ *  @param nb_categories A vector of strings containing the number of b-jets.
+ * 
+ * @return A map containing the histograms used in the analysis.
  *
  */
-std::unordered_map<std::string, std::vector<TH1D *>> get_histograms() {
-    std::unordered_map<std::string, std::vector<TH1D *>> hists;
-    std::vector<std::string> btag_categories = {"btagLooseWP", "btagMediumWP", "btagTightWP"};
-    std::vector<std::string> nb_categories = {"nb_lt_2", "nb_eq_2", "nb_gt_2"};
+std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> btag_categories, std::vector<std::string> nb_categories) {
+    std::unordered_map<std::string, TH1D *> hists;
 
     // Initialize histograms for the number of jets and b-jets
     for (const auto& category : btag_categories) {
-        hists["h_nbjet_" + category].push_back(new TH1D(("h_nbjet_" + category).c_str(), "Number of b-Jets", 20, 0, 20));
-        hists["h_njet_" + category].push_back(new TH1D(("h_njet_" + category).c_str(), "Number of Jets", 20, 0, 20));
+        hists["nbjet_" + category] = new TH1D(("nbjet_" + category).c_str(), "Number of b-Jets", 20, 0, 20);
+        hists["njet_" + category] = new TH1D(("njet_" + category).c_str(), "Number of Jets", 20, 0, 20);
     }
 
-    // Initialize histograms for the lepton kinematics
+    // Initialize histograms with fixed btag WP 
     for (const auto& category : nb_categories) {
-        hists["h_lep1_pt_" + category].push_back(new TH1D(("h_lep1_pt_" + category).c_str(), "Leading Lepton p_{T}", 100, 0, 500));
-        hists["h_lep1_eta_" + category].push_back(new TH1D(("h_lep1_eta_" + category).c_str(), "Leading Lepton #eta", 100, -2.5, 2.5));
-        hists["h_lep1_phi_" + category].push_back(new TH1D(("h_lep1_phi_" + category).c_str(), "Leading Lepton #phi", 100, -3.14, 3.14));
-        hists["h_lep2_pt_" + category].push_back(new TH1D(("h_lep2_pt_" + category).c_str(), "Sub-leading Lepton p_{T}", 100, 0, 500));
-        hists["h_lep2_eta_" + category].push_back(new TH1D(("h_lep2_eta_" + category).c_str(), "Sub-leading Lepton #eta", 100, -2.5, 2.5));
-        hists["h_lep2_phi_" + category].push_back(new TH1D(("h_lep2_phi_" + category).c_str(), "Sub-leading Lepton #phi", 100, -3.14, 3.14));
-    }
+        // Initialize histograms for the lepton kinematics
+        hists["lep1_pt_" + category] = new TH1D(("lep1_pt_" + category).c_str(), "Leading Lepton p_{T}", 100, 0, 500);
+        hists["lep1_eta_" + category] = new TH1D(("lep1_eta_" + category).c_str(), "Leading Lepton #eta", 100, -2.5, 2.5);
+        hists["lep1_phi_" + category] = new TH1D(("lep1_phi_" + category).c_str(), "Leading Lepton #phi", 100, -3.14, 3.14);
+        hists["lep2_pt_" + category] = new TH1D(("lep2_pt_" + category).c_str(), "Sub-leading Lepton p_{T}", 100, 0, 500);
+        hists["lep2_eta_" + category] = new TH1D(("lep2_eta_" + category).c_str(), "Sub-leading Lepton #eta", 100, -2.5, 2.5);
+        hists["lep2_phi_" + category] = new TH1D(("lep2_phi_" + category).c_str(), "Sub-leading Lepton #phi", 100, -3.14, 3.14);
 
-    // Initialize histograms for the dilepton kinematics
-    for (const auto& category : nb_categories) {
-        hists["h_m_ll_" + category].push_back(new TH1D(("h_m_ll_" + category).c_str(), "Dilepton Mass", 100, 0, 1000));
-        hists["h_pt_ll_" + category].push_back(new TH1D(("h_pt_ll_" + category).c_str(), "Dilepton p_{T}", 100, 0, 500));
-    }
+        // Initialize histograms for the dilepton kinematics
+        hists["m_ll_" + category] = new TH1D(("m_ll_" + category).c_str(), "Dilepton Mass", 100, 0, 1000);
+        hists["pt_ll_" + category] = new TH1D(("pt_ll_" + category).c_str(), "Dilepton p_{T}", 100, 0, 500);
 
-    // Initialize histograms for other kinematic quantities
-    for (const auto& category : nb_categories) {
-        hists["h_PFMET_pt_final_" + category].push_back(new TH1D(("h_PFMET_pt_final_" + category).c_str(), "PFMET p_{T}", 100, 0, 500));
-        hists["h_Ht"].push_back(new TH1D("h_Ht", "H_{T}", 100, 0, 1000));
+        // Initialize histograms for other kinematic quantities
+        hists["PFMET_pt_final_" + category] = new TH1D(("PFMET_pt_final_" + category).c_str(), "PFMET p_{T}", 100, 0, 500);
+        hists["Ht_" + category] = new TH1D("Ht", "H_{T}", 100, 0, 1000);
     }
 
     return hists;
@@ -125,8 +125,9 @@ std::unordered_map<std::string, std::vector<TH1D *>> get_histograms() {
  * @param hists A vector of pairs of the histogram name and the histogram vector to be filled. Passed by reference.
  * 
  */
-void process_event(EventData data, std::unordered_map<std::string, std::vector<TH1D *>> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP) {
+void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP, constexpr float PFMET_pt_final_threshold, constexpr float pt_threshold_btagged, constexpr float pt_threshold_unbtagged) {
     double event_total_wgt = data.event_wgt * data.event_wgt_triggers_dilepton_matched * data.event_wgt_SFs_btagging * data.event_wgt_TTxsec;
+    bool passMETCut = data.PFMET_pt_final > PFMET_pt_final_threshold;
 
     // Calculate variables needed for filling histograms
     std::vector<unsigned int> nbjet_ct;
@@ -144,12 +145,10 @@ void process_event(EventData data, std::unordered_map<std::string, std::vector<T
     for (unsigned int i = 0; i < data.njet; i++) {
         // is_btagged is an unsigned char 
         // defined by int(is_btagged_loose) + int(is_btagged_medium) + int(is_btagged_tight)
-        auto is_btagged = data.jet_is_btagged->at(i);
-        auto const& pt = data.jet_pt->at(i);
+        unsigned char is_btagged = data.jet_is_btagged->at(i);
+        float const& pt = data.jet_pt->at(i);
 
         // TODO: add thresholds and WPs as arguments instead
-        constexpr float pt_threshold_btagged = 40.;
-        constexpr float pt_threshold_unbtagged = 25.;
         float pt_threshold = (is_btagged ? pt_threshold_btagged : pt_threshold_unbtagged);
         if (is_btagged && pt < pt_threshold) is_btagged = 0;
         pt_threshold = (is_btagged ? pt_threshold_btagged : pt_threshold_unbtagged);
@@ -157,8 +156,11 @@ void process_event(EventData data, std::unordered_map<std::string, std::vector<T
         if (pt > pt_threshold) {
             Ht += pt;
             
-            if (is_btagged == 0 && data.PFMET_pt_final > 50.) h_jetpt.front()->Fill(pt, event_total_wgt);
-            if (is_btagged > 0 && data.PFMET_pt_final > 50.) h_bjetpt.at(is_btagged - 1)->Fill(pt, event_total_wgt);
+            // Fill histograms for the jet and b-jet kinematics
+            if (is_btagged == 0 && passMETCut) hists["h_jetpt"].front()->Fill(pt, event_total_wgt);
+            if (is_btagged > 0 && passMETCut) hists["h_bjetpt"].at(is_btagged - 1)->Fill(pt, event_total_wgt);
+
+            // count the number of jets and b-jets
             if (is_btagged == 0) njet_ct++;
             if (is_btagged >= 1) nbjet_ct.at(0)++;
             if (is_btagged >= 2) nbjet_ct.at(1)++;
@@ -166,6 +168,7 @@ void process_event(EventData data, std::unordered_map<std::string, std::vector<T
         }
     }
 
+    // Calculate the dilepton kinematics
     TLorentzVector lep1;
     TLorentzVector lep2;
     lep1.SetPtEtaPhiM(data.lep_pt->at(0), data.lep_eta->at(0), data.lep_phi->at(0), data.lep_mass->at(0));
@@ -173,37 +176,45 @@ void process_event(EventData data, std::unordered_map<std::string, std::vector<T
     TLorentzVector dilep = lep1 + lep2;
 
     // Fill histograms
+    std::string category;
 
-    for (unsigned int i_btag_category = 0; i_btag_category < 3; i_btag_category++){
+    for (unsigned int i_btag_category = 0; i_btag_category < btag_categories.size(); i_btag_category++){
         // loose medium tight categories
-        if (data.PFMET_pt_final > 50.) h_nbjet.at(i_btag_category)->Fill(nbjet_ct.at(i_btag_category), event_total_wgt);
+        category = btag_categories.at(i_btag_category);
+
+        if (passMETCut) hists["nbjet_" + category]->Fill(nbjet_ct.at(i_btag_category), event_total_wgt);
     }
 
-    for (unsigned int i_nb_category = 0; i_nb_category < 3; i_nb_category++){
+    for (unsigned int i_nb_category = 0; i_nb_category < nb_categories.size(); i_nb_category++){
         // lt2 eq2 gt2 categories
+        category = nb_categories.at(i_nb_category);
 
+        // Skip events that don't match the category
         if ((i_nb_category == 0) && (nbjet_ct.at(btag_WP) >= 2)) continue;
         if ((i_nb_category == 1) && (nbjet_ct.at(btag_WP) != 2)) continue;
         if ((i_nb_category == 2) && (nbjet_ct.at(btag_WP) <= 2)) continue;
 
-        if (data.PFMET_pt_final > 50.) {
-            h_nbjet.at(i_nb_category)->Fill(nbjet_ct.at(btag_WP), event_total_wgt);
-            h_njet.at(i_nb_category)->Fill(njet_ct, event_total_wgt);
-            h_lep1_pt.at(i_nb_category)->Fill(data.lep_pt->at(0), event_total_wgt);
-            h_lep1_eta.at(i_nb_category)->Fill(data.lep_eta->at(0), event_total_wgt);
-            h_lep1_phi.at(i_nb_category)->Fill(data.lep_phi->at(0), event_total_wgt);
-            h_lep2_pt.at(i_nb_category)->Fill(data.lep_pt->at(1), event_total_wgt);
-            h_lep2_eta.at(i_nb_category)->Fill(data.lep_eta->at(1), event_total_wgt);
-            h_lep2_phi.at(i_nb_category)->Fill(data.lep_phi->at(1), event_total_wgt);
+        if (passMETCut) {
+            // jet multiplicity hists
+            hists["nbjet_" + category ].at(i_nb_category)->Fill(nbjet_ct.at(btag_WP), event_total_wgt);
+            hists["njet_" + category]->Fill(njet_ct, event_total_wgt);
+
+            // lepton hists
+            hists["lep1_pt_" + category]->Fill(data.lep_pt->at(0), event_total_wgt);
+            hists["lep1_eta_" + category]->Fill(data.lep_eta->at(0), event_total_wgt);
+            hists["lep1_phi_" + category]->Fill(data.lep_phi->at(0), event_total_wgt);
+            hists["lep2_pt_" + category]->Fill(data.lep_pt->at(1), event_total_wgt);
+            hists["lep2_eta_" + category]->Fill(data.lep_eta->at(1), event_total_wgt);
+            hists["lep2_phi_" + category]->Fill(data.lep_phi->at(1), event_total_wgt);
     
             // dilepton hists
-            h_m_ll.at(i_nb_category)->Fill(dilep.M(), event_total_wgt);
-            h_pt_ll.at(i_nb_category)->Fill(dilep.Pt(), event_total_wgt);
+            hists["m_ll_" + category]->Fill(dilep.M(), event_total_wgt);
+            hists["pt_ll_" + category]->Fill(dilep.Pt(), event_total_wgt);
             //h_m_lb.at(i_nb_category)->Fill(min_mlb, event_total_wgt);
             //h_m_bb.at(i_nb_category)->Fill(min_mbb, event_total_wgt);
         }
-        h_met.at(i_nb_category)->Fill(data.PFMET_pt_final, event_total_wgt);
-        h_Ht.at(i_nb_category)->Fill(Ht, event_total_wgt);
+        hists["PFMET_pt_final_" + category]->Fill(data.PFMET_pt_final, event_total_wgt);
+        hists["Ht_" + category]->Fill(Ht, event_total_wgt);
     }
 }
 
@@ -218,7 +229,17 @@ void process_event(EventData data, std::unordered_map<std::string, std::vector<T
  * 
  */
 void process_chain(TChain *chain, std::string sample_str) {
-    std::unordered_map<std::string, std::vector<TH1D *>> hists = get_histograms();  
+
+    // Set up the cuts
+    constexpr unsigned int btag_WP = 1; // 0 = loose, 1 = medium, 2 = tight
+    constexpr float PFMET_pt_final_threshold = 50.;
+    constexpr float pt_threshold_btagged = 40.;
+    constexpr float pt_threshold_unbtagged = 25.;
+
+    // initialize the histograms
+    std::vector<std::string> btag_categories = {"btagLooseWP", "btagMediumWP", "btagTightWP"};
+    std::vector<std::string> nb_categories = {"nb_lt_2", "nb_eq_2", "nb_gt_2"};
+    std::unordered_map<std::string, TH1D *> hists = get_histograms(btag_categories, nb_categories);  
 
     // Set up the event data structure
     EventData eventData;
@@ -238,10 +259,11 @@ void process_chain(TChain *chain, std::string sample_str) {
     if (sample_str.find("TT_") != std::string::npos) eventData.event_wgt_TTxsec = 0.826;
     if (sample_str.find("Data") != std::string::npos) eventData.event_wgt_SFs_btagging = 1.;
 
+    // Event loop
     int n_entries = chain->GetEntries();
     for (int i = 0; i < n_entries; i++) {
         chain->GetEntry(i);
-        process_event(eventData, hists, btag_categories, nb_categories, btag_WP); 
+        process_event(eventData, hists, btag_categories, nb_categories, btag_WP, PFMET_pt_final_threshold, pt_threshold_btagged, pt_threshold_unbtagged); 
     }
 
     // Rebin and write histograms to file 
@@ -256,6 +278,4 @@ void process_chain(TChain *chain, std::string sample_str) {
         }
     }
     f->Close();
-
-    delete event;
 }
