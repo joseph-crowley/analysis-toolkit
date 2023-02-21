@@ -1,0 +1,49 @@
+{
+    "TT_2l2nu": [
+        "TT_2l2nu"
+    ],
+    "TT_lnu": [
+        "TT_lnu_nlo"
+    ],
+    "TTV": [
+        "TTH_HToNonBB",
+        "TTW_lnu",
+        "TTZ_2l2nu_M_10",
+        "TTZ_2l2nu_M_1to10"
+    ],
+    "ST_tW": [
+        "ST_tW_antitop_5f_NoFullyHadronicDecays",
+        "ST_tW_top_5f_NoFullyHadronicDecays"
+    ],
+    "WW": [
+        "qqWW_2l2nu"
+    ],
+    "Others": [
+        "DY_2l_M_10to50",
+        "DY_2l_M_50",
+        "GGH_ZZTo4L_POWHEG",
+        "TTGJets",
+        "TTHH",
+        "TTTJ",
+        "TTTW",
+        "TTWH",
+        "TTWW",
+        "TTWZ",
+        "TTZH",
+        "TTZZ",
+        "WJets_lnu_0j",
+        "WJets_lnu_1j",
+        "WJets_lnu_2j",
+        "WWG",
+        "WWW_4f",
+        "WZG",
+        "WZZ",
+        "ZZZ",
+        "qqWG_lnu_lo",
+        "qqWG_lnu_nlo_01j",
+        "qqWZ_3lnu_MG",
+        "qqWZ_3lnu_POWHEG",
+        "qqZG_ll_01j",
+        "qqZZ_4l"
+    ]
+}
