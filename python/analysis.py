@@ -13,32 +13,37 @@ Date: 2023-02-20
 
 import ROOT as root
 from ROOT import gROOT
+
+import os
 import json
 
 import helpers as hf
 
+TAG = 'mc'
+
 def main():
     # Load the C++ code that will be used to process the events
-    root.gSystem.Load('../cpp/loopers/analyze_bjets.so')
+    status = root.gSystem.Load('../cpp/loopers/loopers_cpp.so')
+
+    input(f'status {status}')
 
     # Load the samples
-    samples_json = '../config/samples_MC_Run2.json'
+    samples_json = f'../config/samples_{TAG}_Run2.json'
     with open(samples_json,'r') as f:
         samples = json.load(f)
 
     # Create a dictionary of TChains for each sample
-    map_sample_to_category = hf.map_sample_to_category
+    _,map_sample_to_category = hf.load_sample_map(TAG)
     categories = list(set(map_sample_to_category.values()))
     ch = {}
 
     # Loop over the samples and add the files to the TChains
-    for name,sample in samples:
+    for name,sample in samples.items():
+        if name not in map_sample_to_category:
+            print(f'{name} not in sample map. Skipping...')
+            continue
 
-        # technical detail: sometimes "_ext" samples have more data
-        # remove ext and treat it like normal.
-        # TODO: treat "_ext" samples appropriately by taking the larger collection
-        name_noext = name.replace('_ext')
-        category = map_sample_to_category[name_noext]
+        category = map_sample_to_category[name]
 
         for period in sample:
             # Create a string that will be used to identify the sample
@@ -49,14 +54,14 @@ def main():
                 ch[sample_str] = root.TChain("Events")
 
             # Add the files to the TChain
-            files_by_sample = hf.get_files(sample[period]['paths'])
-            files_by_category = hf.get_samples_by_category(categories, files_by_sample)
-            for file_ in files_by_category[category]:
+            files_by_sample = hf.get_files(sample[period]['paths'][0])
+            
+            for file_ in files_by_sample:
                 ch[sample_str].Add(file_)
 
     # Process the TChains
-    for sample_str in ch:
-        root.process_chain(ch[sample_str], sample_str)
+    for sample_str, chain in ch.items():
+        root.process_chain(chain, sample_str)
 
 if __name__ == "__main__":
     main()

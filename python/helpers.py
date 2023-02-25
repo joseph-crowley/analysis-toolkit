@@ -10,7 +10,7 @@ def load_sample_map(tag):
             sample_map_inv[s] = k
     return sample_map, sample_map_inv
 
-map_category_to_sample, map_sample_to_category = load_sample_map()
+#map_category_to_sample, map_sample_to_category = load_sample_map()
 
 def get_samples_by_category(categories, files):
     samples = {}

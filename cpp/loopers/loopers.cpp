@@ -10,18 +10,26 @@
  *
  */
 
-#include <vector>
-#include <thread>
-#include <algorithm>
-#include <iostream>
-#include <unordered_map>
-
 #include "TFile.h"
-#include "TChain.h"
 #include "TH1D.h"
 #include "TTree.h"
+#include "TChain.h"
+#include "TTreeCache.h"
+#include "TTreeCacheUnzip.h"
+#include "TTreePerfStats.h"
+#include "TCanvas.h"
+#include "TPad.h"
+#include "THStack.h"
+#include "TStyle.h"
+#include "TText.h"
+#include "TLine.h"
+#include "TLegend.h"
+#include "TRatioPlot.h"
+#include "TLatex.h"
+#include "TLorentzVector.h"
 
-#include "../dependencies/tqdm.h"
+#include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -133,6 +141,7 @@ std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> 
  * 
  */
 void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP, float PFMET_pt_final_threshold, float pt_threshold_btagged, float pt_threshold_unbtagged) {
+    std::cout << "eventing..." << endl;
     double event_total_wgt = data.event_wgt * data.event_wgt_triggers_dilepton_matched * data.event_wgt_SFs_btagging * data.event_wgt_TTxsec;
     bool passMETCut = data.PFMET_pt_final > PFMET_pt_final_threshold;
 
@@ -265,6 +274,7 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
  * 
  */
 void process_chain(TChain *chain, std::string sample_str) {
+    std::cout << "hello." << endl;
 
     // Set up the cuts
     constexpr unsigned int btag_WP = 1; // 0 = loose, 1 = medium, 2 = tight
@@ -276,6 +286,8 @@ void process_chain(TChain *chain, std::string sample_str) {
     std::vector<std::string> btag_categories = {"btagLooseWP", "btagMediumWP", "btagTightWP"};
     std::vector<std::string> nb_categories = {"nb_lt_2", "nb_eq_2", "nb_gt_2", "nb_eq_1", "nb_eq_0"};
     std::unordered_map<std::string, TH1D *> hists = get_histograms(btag_categories, nb_categories);  
+
+    std::cout << "got some hists." << endl;
 
     // Set up the event data structure
     EventData eventData;
@@ -291,6 +303,8 @@ void process_chain(TChain *chain, std::string sample_str) {
     chain->SetBranchAddress("leptons_phi", &eventData.lep_phi);
     chain->SetBranchAddress("leptons_mass", &eventData.lep_mass);
 
+    std::cout << "set up event struct." << endl;
+
     // TODO: remove manual setting of weights for the TTbar samples and data
     if (sample_str.find("TT_") != std::string::npos) eventData.event_wgt_TTxsec = 0.826;
     if (sample_str.find("Data") != std::string::npos) eventData.event_wgt_SFs_btagging = 1.;
@@ -298,7 +312,9 @@ void process_chain(TChain *chain, std::string sample_str) {
     // Event loop
     int n_entries = chain->GetEntries();
     for (int i = 0; i < n_entries; i++) {
+        std::cout << "loopin..." << endl;
         chain->GetEntry(i);
+        std::cout << "got entry..." << endl;
         process_event(eventData, hists, btag_categories, nb_categories, btag_WP, PFMET_pt_final_threshold, pt_threshold_btagged, pt_threshold_unbtagged); 
     }
 
@@ -317,3 +333,5 @@ void process_chain(TChain *chain, std::string sample_str) {
     }
     f->Close();
 }
+
+void loopers() { return; } 
