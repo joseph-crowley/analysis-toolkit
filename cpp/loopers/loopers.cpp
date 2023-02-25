@@ -21,7 +21,7 @@
 #include "TH1D.h"
 #include "TTree.h"
 
-#include "dependencies/tqdm.h"
+#include "../dependencies/tqdm.h"
 
 using namespace std;
 
@@ -132,7 +132,7 @@ std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> 
  * @param pt_threshold_unbtagged The threshold for the untagged jet pT.j
  * 
  */
-void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP, constexpr float PFMET_pt_final_threshold, constexpr float pt_threshold_btagged, constexpr float pt_threshold_unbtagged) {
+void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP, float PFMET_pt_final_threshold, float pt_threshold_btagged, float pt_threshold_unbtagged) {
     double event_total_wgt = data.event_wgt * data.event_wgt_triggers_dilepton_matched * data.event_wgt_SFs_btagging * data.event_wgt_TTxsec;
     bool passMETCut = data.PFMET_pt_final > PFMET_pt_final_threshold;
 
@@ -165,7 +165,7 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             Ht += pt;
             
             // Fill histograms for the jet and b-jet kinematics
-            if !(passMETCut) continue;
+            if (!passMETCut) continue;
 
             // count the number of jets and b-jets
             if (is_btagged == 0) {
@@ -208,20 +208,20 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
     for (unsigned int i_nb_category = 0; i_nb_category < nb_categories.size(); i_nb_category++){
         // Skip events that don't match the category
         category = nb_categories.at(i_nb_category);
-        switch (category) {
-            case "nb_lt_2":
+        switch (i_nb_category) {
+            case 0: // lt2
                 if (nbjet_ct.at(btag_WP) >= 2) continue;
                 break;
-            case "nb_eq_2":
+            case 1: // eq2
                 if (nbjet_ct.at(btag_WP) != 2) continue;
                 break;
-            case "nb_gt_2":
+            case 2: // gt2
                 if (nbjet_ct.at(btag_WP) <= 2) continue;
                 break;
-            case "nb_eq_1":
+            case 3: // eq1
                 if (nbjet_ct.at(btag_WP) != 1) continue;
                 break;
-            case "nb_eq_0":
+            case 4: // eq0
                 if (nbjet_ct.at(btag_WP) != 0) continue;
                 break;
             default:
@@ -230,7 +230,7 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
 
         if (passMETCut) {
             // jet multiplicity hists
-            hists["nbjet_" + category ].at(i_nb_category)->Fill(nbjet_ct.at(btag_WP), event_total_wgt);
+            hists["nbjet_" + category ]->Fill(nbjet_ct.at(btag_WP), event_total_wgt);
             hists["njet_" + category]->Fill(njet_ct, event_total_wgt);
 
             // lepton hists
@@ -303,7 +303,7 @@ void process_chain(TChain *chain, std::string sample_str) {
     }
 
     // Rebin and write histograms to file 
-    std::string outfile_name = "hists_"+ sample_str + "_" + btag_categories.at(btag_WP) + "bpt" + pt_threshold_btagged + "_jpt" + pt_threshold_unbtagged + ".root";
+    std::string outfile_name = "hists_"+ std::string(sample_str) + "_" + std::string(btag_categories.at(btag_WP)) + "bpt" + std::to_string(pt_threshold_btagged) + "_jpt" + std::to_string(pt_threshold_unbtagged) + ".root";
     TFile *f = new TFile(outfile_name.c_str(), "RECREATE");
     TH1D *hist;
     int nbin;
