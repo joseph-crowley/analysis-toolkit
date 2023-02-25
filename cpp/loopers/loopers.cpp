@@ -124,6 +124,12 @@ std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> 
  * 
  * @param data An EventData object containing the event data. 
  * @param hists A vector of pairs of the histogram name and the histogram vector to be filled. Passed by reference.
+ * @param btag_categories A vector of strings containing the b-tagging working points.
+ * @param nb_categories A vector of strings containing the number of b-jets.
+ * @param btag_WP The b-tagging working point.
+ * @param PFMET_pt_final_threshold The threshold for the PFMET_pt_final variable.
+ * @param pt_threshold_btagged The threshold for the b-tagged jet pT.
+ * @param pt_threshold_unbtagged The threshold for the untagged jet pT.j
  * 
  */
 void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hists, std::vector<std::string> btag_categories, std::vector<std::string> nb_categories, unsigned int btag_WP, constexpr float PFMET_pt_final_threshold, constexpr float pt_threshold_btagged, constexpr float pt_threshold_unbtagged) {
@@ -200,13 +206,27 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
     }
 
     for (unsigned int i_nb_category = 0; i_nb_category < nb_categories.size(); i_nb_category++){
-        // lt2 eq2 gt2 categories
-        category = nb_categories.at(i_nb_category);
-
         // Skip events that don't match the category
-        if ((i_nb_category == 0) && (nbjet_ct.at(btag_WP) >= 2)) continue;
-        if ((i_nb_category == 1) && (nbjet_ct.at(btag_WP) != 2)) continue;
-        if ((i_nb_category == 2) && (nbjet_ct.at(btag_WP) <= 2)) continue;
+        category = nb_categories.at(i_nb_category);
+        switch (category) {
+            case "nb_lt_2":
+                if (nbjet_ct.at(btag_WP) >= 2) continue;
+                break;
+            case "nb_eq_2":
+                if (nbjet_ct.at(btag_WP) != 2) continue;
+                break;
+            case "nb_gt_2":
+                if (nbjet_ct.at(btag_WP) <= 2) continue;
+                break;
+            case "nb_eq_1":
+                if (nbjet_ct.at(btag_WP) != 1) continue;
+                break;
+            case "nb_eq_0":
+                if (nbjet_ct.at(btag_WP) != 0) continue;
+                break;
+            default:
+                break;
+        }
 
         if (passMETCut) {
             // jet multiplicity hists
@@ -227,6 +247,8 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
             //hists["m_lb_" + category]->Fill(min_mlb, event_total_wgt);
             //hists["m_bb_" + category]->Fill(min_mbb, event_total_wgt);
         }
+
+        // No MET cut
         hists["PFMET_pt_final_" + category]->Fill(data.PFMET_pt_final, event_total_wgt);
         hists["Ht_" + category]->Fill(Ht, event_total_wgt);
     }
@@ -252,7 +274,7 @@ void process_chain(TChain *chain, std::string sample_str) {
 
     // initialize the histograms
     std::vector<std::string> btag_categories = {"btagLooseWP", "btagMediumWP", "btagTightWP"};
-    std::vector<std::string> nb_categories = {"nb_lt_2", "nb_eq_2", "nb_gt_2"};
+    std::vector<std::string> nb_categories = {"nb_lt_2", "nb_eq_2", "nb_gt_2", "nb_eq_1", "nb_eq_0"};
     std::unordered_map<std::string, TH1D *> hists = get_histograms(btag_categories, nb_categories);  
 
     // Set up the event data structure
