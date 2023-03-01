@@ -57,12 +57,12 @@ struct EventData {
     float event_wgt_SFs_btagging;
     unsigned int njet;
     float PFMET_pt_final;
-    std::vector<float> *jet_pt;
-    std::vector<unsigned char> *jet_is_btagged;
-    std::vector<float> *lep_pt;
-    std::vector<float> *lep_eta;
-    std::vector<float> *lep_phi;
-    std::vector<float> *lep_mass;
+    std::vector<float> *jet_pt = 0;
+    std::vector<unsigned char> *jet_is_btagged = 0;
+    std::vector<float> *lep_pt = 0;
+    std::vector<float> *lep_eta = 0;
+    std::vector<float> *lep_phi = 0;
+    std::vector<float> *lep_mass = 0;
 };
 
 /**
@@ -114,7 +114,7 @@ std::unordered_map<std::string, TH1D *> get_histograms(std::vector<std::string> 
 
         // Initialize histograms for other kinematic quantities
         hists["PFMET_pt_final_" + category] = new TH1D(("PFMET_pt_final_" + category).c_str(), "PFMET p_{T}", 100, 0, 500);
-        hists["Ht_" + category] = new TH1D("Ht", "H_{T}", 100, 0, 1000);
+        hists["Ht_" + category] = new TH1D(("Ht_" + category).c_str(), "H_{T}", 100, 0, 1000);
     }
 
     return hists;
@@ -274,6 +274,7 @@ void process_event(EventData data, std::unordered_map<std::string, TH1D *> &hist
  * 
  */
 void process_chain(TChain *chain, std::string sample_str) {
+    int n_entries = chain->GetEntries();
     std::cout << "hello." << endl;
 
     // Set up the cuts
@@ -290,7 +291,7 @@ void process_chain(TChain *chain, std::string sample_str) {
     std::cout << "got some hists." << endl;
 
     // Set up the event data structure
-    EventData eventData;
+    EventData *eventData;
     chain->SetBranchAddress("event_wgt", &eventData.event_wgt);
     chain->SetBranchAddress("event_wgt_triggers_dilepton_matched", &eventData.event_wgt_triggers_dilepton_matched);
     chain->SetBranchAddress("event_wgt_SFs_btagging", &eventData.event_wgt_SFs_btagging);
@@ -306,13 +307,13 @@ void process_chain(TChain *chain, std::string sample_str) {
     std::cout << "set up event struct." << endl;
 
     // TODO: remove manual setting of weights for the TTbar samples and data
-    if (sample_str.find("TT_") != std::string::npos) eventData.event_wgt_TTxsec = 0.826;
-    if (sample_str.find("Data") != std::string::npos) eventData.event_wgt_SFs_btagging = 1.;
+    //if (sample_str.find("TT_") != std::string::npos) eventData.event_wgt_TTxsec = 0.826;
+    //if (sample_str.find("Data") != std::string::npos) eventData.event_wgt_SFs_btagging = 1.;
 
     // Event loop
-    int n_entries = chain->GetEntries();
-    for (int i = 0; i < n_entries; i++) {
-        std::cout << "loopin..." << endl;
+    std::cout << "Looping over " << n_entries << " entries..." << endl;
+    for (int i = 0; i < chain->GetEntries(); ++i) {
+        std::cout << "getting entry..." << endl;
         chain->GetEntry(i);
         std::cout << "got entry..." << endl;
         process_event(eventData, hists, btag_categories, nb_categories, btag_WP, PFMET_pt_final_threshold, pt_threshold_btagged, pt_threshold_unbtagged); 
